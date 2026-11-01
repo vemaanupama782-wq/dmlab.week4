@@ -1,0 +1,266 @@
+To perform different classification algorithms on datasets in Weka (ID3, J48, Naïve Bayes, and k-NN), analyze entropy and Kappa statistic, extract rules, plot ROC curves, and compare classifier performance.
+Exploring and Loading Datasets in WEKA
+WEKA comes bundled with several sample datasets such as Iris, Weather, Diabetes, etc.
+To explore datasets:
+1.Open WEKA Explorer.
+2.Click Open file in the Preprocess panel.
+3.Navigate to the data folder within the WEKA installation directory.
+4.Select a dataset like iris.arff or weather.arff.
+Loading a dataset allows you to view the attributes and instances and apply preprocessing, classification, clustering, and more.
+
+Example: Loading the Iris Dataset
+Open WEKA Explorer.
+In the Preprocess panel, click Open file.
+Select the iris.arff file.
+The dataset loads and displays attributes such as sepal length, sepal width, petal length, petal width, and class.
+You can now proceed to classify, cluster, or visualize this dataset.
+
+After loading the iris data set the visualization of the preprocess is as shown in the figure.
+The attributes are sepallength , sepalwidth,petallength,petalwidth.
+The value and statistic of the each attribute is as shown.
+Histograms of each attribute of the data is shown below.
+
+
+Discretizing the data:
+●It is important to discritize the data because it involves transforming continuous numeric attributes into discrete, categorical (nominal) attributes.
+●Open the filter.
+●Select the Unsupervised data.
+●Click on the  discretize.
+●Apply this filter on the data.
+
+
+
+
+
+
+	
+
+
+Filter Application: A "Discretize" filter has been applied to the "iris" dataset. This filter, Discretize -B 10 -M -1.0 -R first-last -precision 6, transforms numerical attributes into nominal (categorical) ones by dividing them into 10 bins. 
+
+Classification on the data:
+●To apply the classification on the data set, click on the classify panel.
+●Select the different algorithms to perform on the data (J48,Id3 ,etc.., classification algorithms). Select the J48 algorithm as shown in fig.
+
+
+
+
+
+
+
+
+
+
+
+
+
+After applying the J48 algorithm, the default Cross-validation folds 10 in test options.
+Click on the start button to see the classifier output.
+
+
+Visualization of a J48 algorithm in tree mode:
+●In the result list , it shows the present running algorithm.
+●Click on the right side to see more options.
+●Click on the Visualize tree option to see the output in the tree mode.
+●Do the process as shown in the figure. 
+
+
+Classifier tree visualizer as shown in fig.
+2.Load each dataset into Weka/R and perform Naïve-bayes classification and k-Nearest Neighbour classification. Interpret the results obtained. 
+DATA SET:
+●Performing the Naïve-bayes classification on the same data set (i.e.. is Iris data set).
+●Here the data set Iris is already in discretization mode as we done in the above algorithm.
+●Click on the classify panel.
+●Select the Classifiers and open the bayes.
+●In that bayes select the NaiveBayes algorithm.
+●Do the process as shown in the figure.
+
+
+After choosing the Navie-Bayes Algorithm:
+●In the test options the default cross validation folds is 10.
+●Click on the start button to observe the classifier output for the Navie-bayes Algorithm.
+
+
+-Nearest Neighbour Classification algorithm:
+●K It is also one of the classification algorithm  like J48,Id3 etc..
+●Choose the IBk algorithm from the lazy classifiers.
+●As shown in figure.
+
+After choosing the IBk Algorithm
+●In the test options the default cross validation folds is 10.
+●Click on the start button to observe the classifier output for the IBk  Algorithm.
+
+
+Here it is the Generic Object Editor for the classification on the iris data set with Ibk classification algorithm.
+
+Plot RoC Curves 
+ROC Curve Visualization in Weka (IBk Classifier)
+●After executing the IBk (k=3) classifier on the Iris dataset using 10-fold cross-validation, the results are listed under the Result list. 
+●By right-clicking on the classifier result, Weka provides multiple options for analyzing the model.
+
+
+: To perform different classification algorithms on datasets in Weka (ID3, J48, Naïve Bayes, and k-NN), analyze entropy and Kappa statistic, extract rules, plot ROC curves, and compare classifier performance.
+Exploring and Loading Datasets in WEKA
+WEKA comes bundled with several sample datasets such as Iris, Weather, Diabetes, etc.
+To explore datasets:
+1.Open WEKA Explorer.
+2.Click Open file in the Preprocess panel.
+3.Navigate to the data folder within the WEKA installation directory.
+4.Select a dataset like iris.arff or weather.arff.
+Loading a dataset allows you to view the attributes and instances and apply preprocessing, classification, clustering, and more.
+
+Example: Loading the Iris Dataset
+Open WEKA Explorer.
+In the Preprocess panel, click Open file.
+Select the iris.arff file.
+The dataset loads and displays attributes such as sepal length, sepal width, petal length, petal width, and class.
+You can now proceed to classify, cluster, or visualize this dataset.
+
+After loading the iris data set the visualization of the preprocess is as shown in the figure.
+The attributes are sepallength , sepalwidth,petallength,petalwidth.
+The value and statistic of the each attribute is as shown.
+Histograms of each attribute of the data is shown below.
+
+
+Discretizing the data:
+●It is important to discritize the data because it involves transforming continuous numeric attributes into discrete, categorical (nominal) attributes.
+●Open the filter.
+●Select the Unsupervised data.
+●Click on the  discretize.
+●Apply this filter on the data.
+
+
+
+
+
+
+	
+
+
+Filter Application: A "Discretize" filter has been applied to the "iris" dataset. This filter, Discretize -B 10 -M -1.0 -R first-last -precision 6, transforms numerical attributes into nominal (categorical) ones by dividing them into 10 bins. 
+
+Classification on the data:
+●To apply the classification on the data set, click on the classify panel.
+●Select the different algorithms to perform on the data (J48,Id3 ,etc.., classification algorithms). Select the J48 algorithm as shown in fig.
+
+
+
+
+
+
+
+
+
+
+
+
+
+After applying the J48 algorithm, the default Cross-validation folds 10 in test options.
+Click on the start button to see the classifier output.
+
+
+Visualization of a J48 algorithm in tree mode:
+●In the result list , it shows the present running algorithm.
+●Click on the right side to see more options.
+●Click on the Visualize tree option to see the output in the tree mode.
+●Do the process as shown in the figure. 
+
+
+Classifier tree visualizer as shown in fig.
+2.Load each dataset into Weka/R and perform Naïve-bayes classification and k-Nearest Neighbour classification. Interpret the results obtained. 
+DATA SET:
+●Performing the Naïve-bayes classification on the same data set (i.e.. is Iris data set).
+●Here the data set Iris is already in discretization mode as we done in the above algorithm.
+●Click on the classify panel.
+●Select the Classifiers and open the bayes.
+●In that bayes select the NaiveBayes algorithm.
+●Do the process as shown in the figure.
+
+
+After choosing the Navie-Bayes Algorithm:
+●In the test options the default cross validation folds is 10.
+●Click on the start button to observe the classifier output for the Navie-bayes Algorithm.
+
+
+-Nearest Neighbour Classification algorithm:
+●K It is also one of the classification algorithm  like J48,Id3 etc..
+●Choose the IBk algorithm from the lazy classifiers.
+●As shown in figure.
+
+After choosing the IBk Algorithm
+●In the test options the default cross validation folds is 10.
+●Click on the start button to observe the classifier output for the IBk  Algorithm.
+
+
+Here it is the Generic Object Editor for the classification on the iris data set with Ibk classification algorithm.
+
+Plot RoC Curves 
+ROC Curve Visualization in Weka (IBk Classifier)
+●After executing the IBk (k=3) classifier on the Iris dataset using 10-fold cross-validation, the results are listed under the Result list. 
+●By right-clicking on the classifier result, Weka provides multiple options for analyzing the model.
+
+
+Demonstrate performing clustering of datasets.To perform clustering on a given dataset using unsupervised learning techniques (such as K-Means, Hierarchical) in order to group the data into meaningful clusters based on similarities and patterns without prior class labels.
+To Perform the clustering of datasets we have to follow these steps:
+●Loading Dataset
+●Open Weka Explorer → Preprocess panel.
+●Load a dataset such as iris.arff or weather.numeric.arff.
+●Weka displays the number of attributes and instances.
+●Numeric datasets (like Iris) are best for clustering.
+
+
+2. Running k-Means Clustering
+●Go to the Cluster panel in Weka Explorer.
+●Select SimpleKMeans from the clustering algorithms.
+
+●Choose different values of k (e.g., 2, 3, 4) to test clustering.
+
+●Run the algorithm to generate cluster assignments.
+●Output includes cluster centroids, number of instances per cluster, and Sum of Squared Errors (SSE).
+
+After Changing the values(numClusters:5):
+
+●Run the algorithm to generate cluster assignments.
+●Output includes cluster centroids, number of instances per cluster, and Sum of Squared Errors (SSE).
+
+●Studying Cluster Results
+●For iris dataset, k=2 often matches the 3 flower species.
+●he output shows centroids, which represent the mean values of attributes percluster.
+●SSE measures how compact clusters are (lower is better).
+●Misclassifications happen if clusters overlap in attribute space.
+●Comparing clusters with the actual class attribute shows clustering accuracy.
+
+
+
+
+
+
+
+4. Exploring Other Clustering Techniques
+●Weka provides other clustering algorithms like EM (Expectation-Maximization), Hierarchical clustering, and COBWEB.
+●EM automatically determines the number of clusters based on probability distribution.
+●Hierarchical clustering builds a tree (dendrogram) of nested clusters.
+●Different algorithms may produce different cluster structures.
+●Comparing results helps understand which algorithm suits the dataset.
+
+Before Changing the values(numClusters:2):
+
+
+
+
+
+After Changing the values(numClusters:4):
+
+
+
+5. Visualizing Clusters & Insights
+●Open the Visualize panel in Weka.
+●Select attributes on X and Y axes to view scatter plots of clusters.
+●Clusters are shown in different colors for clear separation.
+●Well-separated datasets (like Iris) show clear clusters.
+●Visualization confirms if chosen k correctly matches natural grouping.
+
+
+
+
+
